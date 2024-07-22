@@ -1,0 +1,16 @@
+import java.math.BigInteger;
+class Solution {
+    public int mySqrt(int x) {
+        if (x < 0) {
+            throw new IllegalArgumentException("Input cannot be negative");
+        }
+        return (int) Math.sqrt(x);
+    }
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+        int x1 = 4;
+        System.out.println(solution.mySqrt(x1));
+        int x2 = 8;
+        System.out.println(solution.mySqrt(x2)); 
+    }
+}
